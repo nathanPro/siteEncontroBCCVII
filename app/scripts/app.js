@@ -65,6 +65,21 @@ angular
         controller: 'LocalCtrl',
         controllerAs: 'Local'
       })
+      .when('/Chegando', {
+        templateUrl: 'views/chegando.html',
+        controller: 'ChegandoCtrl',
+        controllerAs: 'Chegando'
+      })
+      .when('/Hack', {
+        templateUrl: 'views/hack.html',
+        controller: 'HackCtrl',
+        controllerAs: 'Hack'
+      })
+      .when('/info/:id', {
+        templateUrl: 'views/info.html',
+        controller: 'InfoCtrl',
+        controllerAs: 'info'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -8,10 +8,6 @@
  * Controller of the encontroApp
  */
 angular.module('encontroApp')
-  .controller('PalestrantesCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('PalestrantesCtrl', function (Palestrantes, $scope) {
+    $scope.palestrantes = Palestrantes.all();
   });

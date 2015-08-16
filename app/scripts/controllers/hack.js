@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name encontroApp.controller:PatrocinadoresCtrl
+ * @name encontroApp.controller:HackCtrl
  * @description
- * # PatrocinadoresCtrl
+ * # HackCtrl
  * Controller of the encontroApp
  */
 angular.module('encontroApp')
-  .controller('PatrocinadoresCtrl', function () {
+  .controller('HackCtrl', function () {
 
   });

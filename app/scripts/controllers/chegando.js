@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name encontroApp.controller:PatrocinadoresCtrl
+ * @name encontroApp.controller:ChegandoCtrl
  * @description
- * # PatrocinadoresCtrl
+ * # ChegandoCtrl
  * Controller of the encontroApp
  */
 angular.module('encontroApp')
-  .controller('PatrocinadoresCtrl', function () {
+  .controller('ChegandoCtrl', function () {
 
   });

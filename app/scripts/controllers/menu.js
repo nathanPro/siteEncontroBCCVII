@@ -9,9 +9,5 @@
  */
 angular.module('encontroApp')
   .controller('MenuCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+
   });

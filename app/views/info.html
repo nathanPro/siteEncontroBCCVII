@@ -1,6 +1,6 @@
-<div class="panel panel-default" ng-repeat="pale in palestrantes" ng-show="pale.palestra==1">
+<div class="panel panel-default" ng-show="pale.palestra==1">
     <div class="panel-heading">
-        <h4><i class="fa fa-fw fa-gift"></i><b>{{pale.nome_palestrante}}</b> <small>{{pale.title}} </small></h4> </div>
+        <h4><i class="fa fa-fw fa-gift"></i><b>{{pale.title}} </b> <small>{{pale.nome_palestrante}}</small></h4> </div>
     <div class="panel-body">
     	<div class="row">
             <div class="col-md-2" style="padding-top: 5px;">
@@ -8,9 +8,13 @@
             	<img src="{{pale.image}}" style="width: 100%;" class="img-thumbnail" ng-show="pale.image!=''">
             </div>
     		<div class="col-md-10">
-    			<b>Sobre o Palestrante:</b>
+    			<b></b>
+        		<p style="text-align: justify;">{{pale.text_palesta}}</p>
+        		<hr>
         		<p style="text-align: justify;">{{pale.text_pessoal}}</p>
-        		<a href="{{pale.url}} " class="btn btn-default">Ler sobre palestra</a>
+        		<hr>
+        		<p><b>Início:</b> {{pale.start|date:'d/M/yy H:mm'}} </p>
+
             </div>
         </div>
     </div>

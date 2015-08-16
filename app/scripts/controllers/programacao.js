@@ -13,14 +13,15 @@ angular.module('encontroApp')
     $scope.uiConfig = {
       calendar:{
         height: 450,
-        editable: true,
+        editable: false,
         defaultView: 'agendaWeek',
         header: false,
         dayClick: $scope.alertEventOnClick,
         eventDrop: $scope.alertOnDrop,
         eventResize: $scope.alertOnResize,
         defaultDate: '2015-09-06T08:10:00',
-        allDaySlot: false
+        allDaySlot: false,
+        scrollTime :  "8:00:00"
       }
     };
   });

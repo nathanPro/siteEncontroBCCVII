@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="bower_components/admin-lte/dist/css/AdminLTE.css" />
     <link rel="stylesheet" href="bower_components/angular-motion/dist/angular-motion.css" />
     <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css" />
+    <link rel="stylesheet" href="bower_components/jquery.terminal/css/jquery.terminal.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -28,15 +29,9 @@
 
     </div>
 
-    <div class="container">
+    <div class="container container2">
       <div ng-view=""></div>
     </div>
-
-    <div class="footer" style="  margin-left: auto;">
-        <!-- <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p> -->
-    </div>
-
-
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -56,6 +51,7 @@
     <script src="bower_components/angular-ui-calendar/src/calendar.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="bower_components/ngmap/build/scripts/ng-map.js"></script>
+    <script src="bower_components/jquery.terminal/js/jquery.terminal-0.8.8.min.js"></script>
     <!-- endbower -->
     <script src="bower_components/fullcalendar/dist/lang/pt-br.js"></script>
     <!-- endbuild -->
@@ -74,6 +70,9 @@
         <script src="scripts/services/palestrantes.js"></script>
         <script src="scripts/services/patrocinadores.js"></script>
         <script src="scripts/controllers/local.js"></script>
+        <script src="scripts/controllers/chegando.js"></script>
+        <script src="scripts/controllers/hack.js"></script>
+        <script src="scripts/controllers/info.js"></script>
         <!-- endbuild -->
 </body>
 </html>

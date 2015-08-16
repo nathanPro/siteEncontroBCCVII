@@ -1,4 +1,4 @@
-<div class="navbar navbar-default" role="navigation" bs-navbar>
+<div class="navbar navbar-default navbar-fixed-top" bs-navbar>
 	<div class="container">
 		<div class="navbar-header">
 
@@ -15,10 +15,16 @@
 		<div class="collapse navbar-collapse" id="js-navbar-collapse">
 		  <ul class="nav navbar-nav">
 		    <li data-match-route="/$"><a href="#/">Home</a></li>
-		    <li data-match-route="/Colabore"><a href="#/Colabore">Colabore</a></li>
-		    <li data-match-route="/Palestrantes"><a href="#/Palestrantes">Palestrantes/Eventos</a></li>
+		    <!-- <li data-match-route="/Colabore"><a href="#/Colabore">Colabore</a></li> -->
+		    <li data-match-route="/Palestrantes"><a href="#/Palestrantes">Palestrantes</a></li>
+		    <!-- <li data-match-route="/Palestrantes"><a href="#/Hack">Hackthon</a></li> -->
 		    <li data-match-route="/Programacao"><a href="#/Programacao">Programação</a></li>
-		    <li data-match-route="/Local"><a href="#/Local">Local</a></li>
+			<li class="dropdown">
+				<a href="#/Local" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Local <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#/Chegando">Como Chegar</a></li>
+				</ul>
+			</li>
 			<li class="dropdown">
 				<a href="#/Historia" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">História <span class="caret"></span></a>
 				<ul class="dropdown-menu">
@@ -33,3 +39,4 @@
 		</div>
 	</div>
 </div>
+

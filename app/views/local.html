@@ -1,9 +1,11 @@
 <div map-lazy-load="http://maps.google.com/maps/api/js" class="map">
-    <map center="-23.5592004,-46.7316208" zoom="16" class="map2">
-        <marker position="[-23.5592004,-46.7316208]" title="Hello Marker" animation="Animation.BOUNCE" draggable="true" visible="true">
-                <div ng-non-bindable>
-      <div id="siteNotice"></div>
-    </div>
-        </marker>
-    </map>
+	<map center="-23.5592004,-46.7316208" zoom="16" class="map2">
+		<marker position="[-23.5592004,-46.7316208]" title="Hello Marker" draggable="true" visible="true" on-click="showInfoWindow(event, 'marker-info')" on-load="showInfoWindow(event, 'marker-info')">
+			<info-window id="marker-info">
+	        	<p>Instituto de Matemática e Estatística da Universidade de São Paulo <br>
+				Rua do Matão, 1010 - CEP 05508-090 - São Paulo - SP</p>
+	        </info-window>
+		</marker>
+	</map>
 </div>
+
