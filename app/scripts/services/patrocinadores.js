@@ -8,6 +8,8 @@
  * Service in the encontroApp.
  */
 angular.module('encontroApp')
-  .service('patrocinadores', function () {
+  .service('Patrocinadores', function () {
+
+
     // AngularJS will instantiate a singleton by calling "new" on this function
   });
