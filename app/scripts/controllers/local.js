@@ -8,10 +8,10 @@
  * Controller of the encontroApp
  */
 angular.module('encontroApp')
-  .controller('LocalCtrl', function () {
+    .controller('LocalCtrl', function() {
 
 
 
 
 
-});
+    });

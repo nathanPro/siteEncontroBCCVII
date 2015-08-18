@@ -8,6 +8,6 @@
  * Controller of the encontroApp
  */
 angular.module('encontroApp')
-  .controller('HackCtrl', function () {
+    .controller('HackCtrl', function() {
 
-  });
+    });

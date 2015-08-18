@@ -8,6 +8,6 @@
  * Controller of the encontroApp
  */
 angular.module('encontroApp')
-  .controller('MainCtrl', function ($scope) {
-	terminal();
-  });
+    .controller('MainCtrl', function($scope) {
+        terminal();
+    });

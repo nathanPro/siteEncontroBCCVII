@@ -8,20 +8,20 @@
  * Controller of the encontroApp
  */
 angular.module('encontroApp')
-  .controller('ProgramacaoCtrl', function ($scope, Palestrantes, uiCalendarConfig) {
-    $scope.eventSources  = [Palestrantes.all()];
-    $scope.uiConfig = {
-      calendar:{
-        height: 450,
-        editable: false,
-        defaultView: 'agendaWeek',
-        header: false,
-        dayClick: $scope.alertEventOnClick,
-        eventDrop: $scope.alertOnDrop,
-        eventResize: $scope.alertOnResize,
-        defaultDate: '2015-09-06T08:10:00',
-        allDaySlot: false,
-        scrollTime :  "8:00:00"
-      }
-    };
-  });
+    .controller('ProgramacaoCtrl', function($scope, Palestrantes, uiCalendarConfig) {
+        $scope.eventSources = [Palestrantes.all()];
+        $scope.uiConfig = {
+            calendar: {
+                height: 450,
+                editable: false,
+                defaultView: 'agendaWeek',
+                header: false,
+                dayClick: $scope.alertEventOnClick,
+                eventDrop: $scope.alertOnDrop,
+                eventResize: $scope.alertOnResize,
+                defaultDate: '2015-09-06T08:10:00',
+                allDaySlot: false,
+                scrollTime: "8:00:00"
+            }
+        };
+    });

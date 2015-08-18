@@ -8,6 +8,6 @@
  * Controller of the encontroApp
  */
 angular.module('encontroApp')
-  .controller('HistoriaCtrl', function () {
+    .controller('HistoriaCtrl', function() {
 
-  });
+    });

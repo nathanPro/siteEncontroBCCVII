@@ -424,9 +424,22 @@ module.exports = function (grunt) {
           src: '**/*.html',
           dest: '<%= yeoman.app %>'
         }]
+      } 
+    },
+
+    "jsbeautifier" : {
+      dist: {
+        options : {
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.app %>',
+          src: '**/*.js',
+          dest: '<%= yeoman.app %>'
+        }]
       }
-      
     }
+
   });
 
 
@@ -442,7 +455,8 @@ module.exports = function (grunt) {
       'autoprefixer:server',
       'connect:livereload',
       'watch',
-      'prettify'
+      'prettify',
+      'jsbeautifier'
     ]);
   });
 

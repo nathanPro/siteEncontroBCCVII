@@ -8,7 +8,7 @@
  * Controller of the encontroApp
  */
 angular.module('encontroApp')
-  .controller('AconteceCtrl', function () {
+    .controller('AconteceCtrl', function() {
 
-    
-  });
+
+    });

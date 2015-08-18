@@ -8,6 +8,6 @@
  * Controller of the encontroApp
  */
 angular.module('encontroApp')
-  .controller('PalestrantesCtrl', function (Palestrantes, $scope) {
-    $scope.palestrantes = Palestrantes.all();
-  });
+    .controller('PalestrantesCtrl', function(Palestrantes, $scope) {
+        $scope.palestrantes = Palestrantes.all();
+    });

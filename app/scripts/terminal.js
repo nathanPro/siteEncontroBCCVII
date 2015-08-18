@@ -1,4 +1,5 @@
 var anim = false;
+
 function typed(finish_typing) {
     return function(term, message, delay, finish) {
         anim = true;
@@ -33,27 +34,27 @@ var typed_message = typed(function(term, message, prompt) {
     term.set_prompt(prompt);
 });
 
-function terminal (){
+function terminal() {
     // global to access from js terminal
     term = $('#term_demo').terminal(function(command, term) {
         if (command !== '') {
 
             if (command == "BCC") {
-                    typed_message(term, "Olá BCC", 100);
+                typed_message(term, "Olá BCC", 100);
             } else if (command == "-help") {
-                    term.echo("alert(strinf)\tMath.abs()\tMath.acos()\tMath.acosh()\nMath.asin()\tMath.asinh()\tMath.atan()\tMath.atan2()\nMath.atanh()\tMath.cbrt()\tMath.ceil()\tMath.clz32()\nMath.cos()\tMath.cosh()\tMath.exp()\tMath.expm1()\nMath.floor()\tMath.fround()\tMath.hypot()\tMath.imul()\nMath.log()\tMath.log10()\tMath.log1p()\tMath.log2()\nMath.max()\tMath.min()\tMath.pow()\tMath.random()\nMath.round()\tMath.sign()\tMath.sin()\tMath.sinh()\nMath.sqrt()\tMath.tan()\tMath.tanh()\n");
+                term.echo("alert(strinf)\tMath.abs()\tMath.acos()\tMath.acosh()\nMath.asin()\tMath.asinh()\tMath.atan()\tMath.atan2()\nMath.atanh()\tMath.cbrt()\tMath.ceil()\tMath.clz32()\nMath.cos()\tMath.cosh()\tMath.exp()\tMath.expm1()\nMath.floor()\tMath.fround()\tMath.hypot()\tMath.imul()\nMath.log()\tMath.log10()\tMath.log1p()\tMath.log2()\nMath.max()\tMath.min()\tMath.pow()\tMath.random()\nMath.round()\tMath.sign()\tMath.sin()\tMath.sinh()\nMath.sqrt()\tMath.tan()\tMath.tanh()\n");
             } else {
                 try {
                     var result = window.eval(command);
                     if (result !== undefined) {
                         term.echo(new String(result));
                     }
-                } catch(e) {
+                } catch (e) {
                     term.error("Comando não encontrado....");
                 }
             }
         } else {
-           term.echo('');
+            term.echo('');
         }
     }, {
         greetings: '',
@@ -64,7 +65,7 @@ function terminal (){
             // first question
             var msg = "Seja bem vindo!\nVocê está oficialmente convidado para o encontro do BCC 2015.\nPara ajuda -help\n";
             typed_message(term, msg, 100, function() {
-                
+
             });
         }
 
