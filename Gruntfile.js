@@ -406,6 +406,26 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
+    },
+
+    prettify: {
+      dist: {
+        options: {
+          "indent": 4,
+          "indent_scripts": "normal",
+          "wrap_line_length": 0,
+          "brace_style": "collapse",
+          "preserve_newlines": true,
+          "max_preserve_newlines": 1
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.app %>',
+          src: '**/*.html',
+          dest: '<%= yeoman.app %>'
+        }]
+      }
+      
     }
   });
 
@@ -421,7 +441,8 @@ module.exports = function (grunt) {
       'concurrent:server',
       'autoprefixer:server',
       'connect:livereload',
-      'watch'
+      'watch',
+      'prettify'
     ]);
   });
 

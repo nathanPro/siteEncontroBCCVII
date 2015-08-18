@@ -9,6 +9,5 @@
  */
 angular.module('encontroApp')
   .controller('MainCtrl', function ($scope) {
-
-
+	terminal();
   });

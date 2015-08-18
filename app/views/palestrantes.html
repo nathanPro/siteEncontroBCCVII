@@ -2,15 +2,15 @@
     <div class="panel-heading">
         <h4><i class="fa fa-fw fa-gift"></i><b>{{pale.nome_palestrante}}</b> <small>{{pale.title}} </small></h4> </div>
     <div class="panel-body">
-    	<div class="row">
+        <div class="row">
             <div class="col-md-2" style="padding-top: 5px;">
-            	<img src="images/place.png" style="width: 100%;" class="img-thumbnail" ng-show="pale.image==''">
-            	<img src="{{pale.image}}" style="width: 100%;" class="img-thumbnail" ng-show="pale.image!=''">
+                <img src="images/place.png" style="width: 100%;" class="img-thumbnail" ng-show="pale.image==''">
+                <img src="{{pale.image}}" style="width: 100%;" class="img-thumbnail" ng-show="pale.image!=''">
             </div>
-    		<div class="col-md-10">
-    			<b>Sobre o Palestrante:</b>
-        		<p style="text-align: justify;">{{pale.text_pessoal}}</p>
-        		<a href="{{pale.url}} " class="btn btn-default">Ler sobre palestra</a>
+            <div class="col-md-10">
+                <b>Sobre o Palestrante:</b>
+                <p style="text-align: justify;">{{pale.text_pessoal}}</p>
+                <a href="{{pale.url}} " class="btn btn-default">Ler sobre palestra</a>
             </div>
         </div>
     </div>
