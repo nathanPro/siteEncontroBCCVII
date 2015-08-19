@@ -10,8 +10,4 @@
 angular.module('encontroApp')
     .controller('LocalCtrl', function() {
 
-
-
-
-
     });

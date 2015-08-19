@@ -133,3 +133,7 @@ hr {
 .container2 {
   margin-top: 70px;
 }
+
+.fc-time-grid .fc-slats td {
+    height: 2.0em;
+}

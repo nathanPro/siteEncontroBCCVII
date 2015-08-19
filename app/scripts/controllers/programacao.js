@@ -12,7 +12,8 @@ angular.module('encontroApp')
         $scope.eventSources = [Palestrantes.all()];
         $scope.uiConfig = {
             calendar: {
-                height: 450,
+                hiddenDays: [ 0, 1 ],
+                height: 550,
                 editable: false,
                 defaultView: 'agendaWeek',
                 header: false,
@@ -21,7 +22,8 @@ angular.module('encontroApp')
                 eventResize: $scope.alertOnResize,
                 defaultDate: '2015-09-06T08:10:00',
                 allDaySlot: false,
-                scrollTime: "8:00:00"
+                minTime: "10:00:00",
+                maxTime: "19:00:00"
             }
         };
     });
