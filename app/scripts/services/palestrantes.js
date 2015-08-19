@@ -53,6 +53,17 @@ angular.module('encontroApp')
             url: "#/info/5",
             palestra: 1,
             id: 5
+        }, {
+            title: "Criptografia ",
+            nome_palestrante: "Profª Denise Goya",
+            start: new Date(2015, 8, 8, 10),
+            end: new Date(2015, 8, 8, 10, 50),
+            image: "",
+            text_pessoal: "Será publicado em breve.",
+            text_palesta: "Será publicado em breve.",
+            url: "#/info/6",
+            palestra: 1,
+            id: 6
         }];
 
         return {
