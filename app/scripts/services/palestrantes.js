@@ -128,6 +128,72 @@ angular.module('encontroApp')
             url: "#/info/11",
             palestra: 1,
             id: 11
+        }, {
+            title: "Por que fazer IC?",
+            nome_palestrante: "Renato Cordeiro Ferreira",
+            start: new Date(2015, 8, 9, 15),
+            end: new Date(2015, 8, 9, 15, 50),
+            image: "",
+            text_pessoal: "Em breve.",
+            text_palesta: "Em breve.",
+            url: "#/info/12",
+            palestra: 1,
+            id: 12
+        }, {
+            title: "Pós graduação acadêmica em Computação: o que é, como (e se) fazer.",
+            nome_palestrante: "Samuel Plaça de Paula e Suzana de Siqueira Santos",
+            start: new Date(2015, 8, 9, 16, 30),
+            end: new Date(2015, 8, 9, 17, 20),
+            image: "",
+            text_pessoal: "Samuel ingressou no Bacharelado em Ciência da Computação do IME-USP em 2009, ano do primeiro Encontro do BCC. Atualmente faz mestrado em Computação na mesma instituição. Suas áreas de interesse incluem otimização combinatória, algoritmos de aproximação, grafos e complexidade computacional. É RD (representante discente) dos pós-graduandos em computação no Conselho do departamento e na Comissão Coordenadora do programa.<br> Suzana é IMEana desde 2009. Em 2012, realizou iniciação científica (com bolsa do PIBIC/CNPq) e concluiu o Bacharelado em Ciência da Computação. Em seguida, ingressou no mestrado em computação (com bolsa da FAPESP) do IME-USP, que foi concluído em 2015. Atualmente, cursa o primeiro ano do doutorado em computação no mesmo instituto. Suas áreas de interesse de pesquisa são grafos, grafos aleatórios e aplicações em redes biológicas (desde inferência de conectividade a métodos estatísticos para identificar alterações em doenças).",
+            text_palesta: "A palestra tem o intuito de passar uma ideia do que é uma pós graduação acadêmica na área de Computação, sob o ponto de vista de quem conhece a realidade do programa do IME-USP. Nosso objetivo é procurar discutir o que é um mestrado/doutorado, quais as atividades envolvidas e alguns dos principais desafios e recompensas. Também procuraremos abordar algumas informações gerais sobre o programa do IME-USP, dicas de sobrevivência e uma perspectiva de quais as consequências profissionais de se cursar um mestrado ou doutorado na área. Esses são os tópicos propostos, mas a discussão será guiada pela interação com o público presente.",
+            url: "#/info/13",
+            palestra: 1,
+            id: 13
+        }, {
+            title: "USP GameDev",
+            nome_palestrante: "Wilson Kazuo Mizutani",
+            start: new Date(2015, 8, 10),
+            end: new Date(2015, 8, 10, 10, 50),
+            image: "",
+            text_pessoal: "Wilson Kazuo Mizutani é formado no BCC, atualmente cursando Mestrado em computação no IME. Foi um dos fundadores do USPGameDev, e trabalhou no desenvolvimento do jogo Horus Eye e da engine UGDK. Também é embaixador do CCSL, e organizou a II Semana de Software Livre da USP. Participou de um projeto conjunto com a ECA no programa Ensinar com Pesquisa da USP, no qual foram ministrados cursos de software livre para alunos de Jornalismo. Além disso, é membro ativo da Comissão de Recepção do IME, que nesses dois últimos anos ganhou o prêmio de melhor Semana de Recepção aos Calouros pela pró-Reitoria de Graduação da USP.",
+            text_palesta: "Em breve.",
+            url: "#/info/14",
+            palestra: 1,
+            id: 14
+        }, {
+            title: "Computação Quântica",
+            nome_palestrante: "Professores Cris e Gubi",
+            start: new Date(2015, 8, 11),
+            end: new Date(2015, 8, 10, 11, 50),
+            image: "",
+            text_pessoal: "Em breve.",
+            text_palesta: "Em breve.",
+            url: "#/info/15",
+            palestra: 1,
+            id: 15
+        }, {
+            title: "Algoritmos para compressão de dados",
+            nome_palestrante: "Eduardo Sany Laber",
+            start: new Date(2015, 8, 14),
+            end: new Date(2015, 8, 10, 14, 50),
+            image: "",
+            text_pessoal: "Eduardo Sany Laber se  formou em engenharia de computação pela PUC-RIO em 1996 e obteve seu  doutorado  pela mesma instituição em 1999.  De 1999 a 2001, Eduardo foi recém-doutor na COPPE-UFRJ e desde então é professor do departamento de informática da PUC-RIO. Dentre as suas áreas de interesse em pesquisa destacam-se algoritmos, compressão de dados e aprendizado de máquina. Ao longo de sua carreira, Eduardo publicou cerca de 30 artigos em periódicos internacionais, orientou várias dissertações de mestrado e teses de doutorado, algumas delas premiadas. Além disso, realizou trabalhos de consultoria, utilizando algoritmos e métodos quantitativos, para diferentes setores da indústria como mercado financeiro, setor de óleo e gás e setor de midia digital/comércio eletrônico.",
+            text_palesta: "Um bom profissional não é avaliado somente por sua capacidade técnica, mas também por muitas competências e comportamentos essenciais para o bom funcionamento e sucesso de um time e da própria corporação. Sergio Vaz, ex-BCC, discutirá algumas dicas profissionais aos alunos do BCC, baseadas em sua experiência de mais de 15 anos gerenciando equipes de desenvolvimento.",
+            url: "#/info/16",
+            palestra: 1,
+            id: 16
+        }, {
+            title: "Cidades Inteligentes",
+            nome_palestrante: "Roberto Spacey",
+            start: new Date(2015, 8, 10, 16, 30),
+            end: new Date(2015, 8, 10, 17, 20),
+            image: "",
+            text_pessoal: "Em breve.",
+            text_palesta: "Em breve.",
+            url: "#/info/15",
+            palestra: 1,
+            id: 15
         }];
 
         return {
