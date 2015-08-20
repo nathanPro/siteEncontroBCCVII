@@ -1,41 +1,40 @@
 var anim = false;
-var term;
-
-function typed(finish_typing) {
-    return function(term, message, delay, finish) {
-        anim = true;
-        var prompt = term.get_prompt();
-        var c = 0;
-        if (message.length > 0) {
-            term.set_prompt('');
-            var interval = setInterval(function() {
-                term.insert(message[c++]);
-                if (c == message.length) {
-                    clearInterval(interval);
-                    // execute in next interval
-                    setTimeout(function() {
-                        // swap command with prompt
-                        finish_typing(term, message, prompt);
-                        anim = false
-                        finish && finish();
-                    }, delay);
-                }
-            }, delay);
-        }
-    };
-}
-var typed_prompt = typed(function(term, message, prompt) {
-    // swap command with prompt
-    term.set_command('');
-    term.set_prompt(message + ' ');
-});
-var typed_message = typed(function(term, message, prompt) {
-    term.set_command('');
-    term.echo(message)
-    term.set_prompt(prompt);
-});
 
 function terminal(programacao) {
+    function typed(finish_typing) {
+        return function(term, message, delay, finish) {
+            anim = true;
+            var prompt = term.get_prompt();
+            var c = 0;
+            if (message.length > 0) {
+                term.set_prompt('');
+                var interval = setInterval(function() {
+                    term.insert(message[c++]);
+                    if (c == message.length) {
+                        clearInterval(interval);
+                        // execute in next interval
+                        setTimeout(function() {
+                            // swap command with prompt
+                            finish_typing(term, message, prompt);
+                            anim = false
+                            finish && finish();
+                        }, delay);
+                    }
+                }, delay);
+            }
+        };
+    }
+    var typed_prompt = typed(function(term, message, prompt) {
+        // swap command with prompt
+        term.set_command('');
+        term.set_prompt(message + ' ');
+    });
+    var typed_message = typed(function(term, message, prompt) {
+        term.set_command('');
+        term.echo(message)
+        term.set_prompt(prompt);
+    });
+
     // global to access from js terminal
     term = $('#term_demo').terminal(function(command, term) {
         if (command !== '') {
@@ -75,6 +74,7 @@ function terminal(programacao) {
 
             });
         }
-
     });
+
+
 }
