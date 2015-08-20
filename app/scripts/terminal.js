@@ -1,4 +1,5 @@
 var anim = false;
+var term;
 
 function typed(finish_typing) {
     return function(term, message, delay, finish) {
