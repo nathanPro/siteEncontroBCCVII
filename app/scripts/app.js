@@ -134,7 +134,7 @@ angular
                     }
                 }}
             );
-            $urlRouterProvider.otherwise("/main");
+            $urlRouterProvider.otherwise("/");
     })
 
 .directive('disableNgAnimate', ['$animate', function($animate) {
