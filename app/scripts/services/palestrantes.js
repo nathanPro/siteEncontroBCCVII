@@ -47,23 +47,54 @@ angular.module('encontroApp')
             nome_palestrante: "Antônio C. Roque",
             start: new Date(0, 0, 0, 0),
             end: new Date(0, 0, 0, 0),
-            image: "http://placehold.it/350x150",
+            image: "http://placehold.it/150x150?text=Antônio C. Roque",
             text_pessoal: "Natural de São Paulo (1963), Antônio Carlos Roque da Silva Filho, ou simplesmente Antônio Roque como é mais conhecido nos meios acadêmicos, formou-se em física pela Unicamp em 1985. Concluiu mestrado em física na mesma universidade (1987) e fez doutorado em ciência da computação e inteligência artificial na Universidade de Sussex, Inglaterra (1992). Em 1993, ingressou no Departamento de Física da Faculdade de Filosofia, Ciências e Letras de Ribeirão Preto (FFCLRP) da USP onde atualmente é professor associado. Em 1996, fundou e coordena desde então o Laboratório de Sistemas Neurais (SisNe), que é um dos laboratórios de pesquisa pioneiros da América Latina em neurociência computacional. Suas atividades de pesquisa cobrem desde a modelagem biofisicamente detalhada de células nervosas até a modelagem de redes de neurônios compostas por dezenas de milhares de células. Outra ação importante e pioneira do Prof. Roque foi a criação em 2006 da escola bienal “Latin American School on Computational Neuroscience” (LASCON), que tem contribuído significativamente para a formação de pesquisadores em neurociência computacional no Brasil e na América Latina.",
             text_palesta: "Esta palestra fornecerá uma breve apresentação sobre o que é a neurociência computacional. Serão comentados os principais objetivos da área, desde a modelagem computacional de neurônios individuais até a modelagem de redes de neurônios compostas por centenas de milhares de células. Também serão comentadas as principais ferramentas computacionais para a construção de modelos e as principais linhas de pesquisa no tema desenvolvidas pelo palestrante e seus colaboradores.",
             url: "#/info/5",
             palestra: 1,
             id: 5
         }, {
-            title: "Criptografia ",
-            nome_palestrante: "Profª Denise Goya",
+            title: "Criptografia pós-quântica",
+            nome_palestrante: "Denise Hideko Goya",
             start: new Date(2015, 8, 8, 10),
             end: new Date(2015, 8, 8, 10, 50),
             image: "",
-            text_pessoal: "Será publicado em breve.",
-            text_palesta: "Será publicado em breve.",
+            text_pessoal: "Doutora em Ciência da Computação pela Universidade de São Paulo (2011), mestre e graduada pela mesma instituição (Departamento de Ciência da Computação - Instituto de Matemática e Estatística da USP). Tem pesquisado modelos alternativos de criptografia de chave pública, em especial os modelos sem certificado e baseado em identidade. Tópicos de interesse: segurança demonstrável, criptografia baseada em curvas elípticas/hiperelípticas, emparelhamentos bilineares, criptografia pós-quântica, infraestrutura de chaves públicas.",
+            text_palesta: "A criptografia de chave pública é uma das bases conceituais de várias soluções de segurança em sistemas computacionais. Na atualidade, as implementações mais amplamente disseminadas mantém-se seguras enquanto não houver solução de complexidade polinomial para a fatoração de inteiros e para o cálculo de logaritmos discretos em corpos finitos. Sob o modelo computacional clássico (baseado em bits), é pouco provável que tal solução polinomial exista, mas isso não é verdade considerando-se o modelo computacional quântico (baseado em qubits). Em 1997, Peter Shor apresentou um algoritmo quântico capaz de fatorar inteiros em tempo hábil. Isso significa que, na existência de um computador quântico, dados hoje protegidos podem deixar de estar. Felizmente, existem problemas computacionais para os quais conjectura-se que, mesmo na presença de um computador quântico, não há solução eficiente. Esquemas criptográficos baseados nesses problemas são conhecidos como pós-quânticos. Nesse encontro, serão apresentados conceitos básicos relacionados à linha de pesquisa em criptografia pós-quântica e exemplos de primitivas criptográficas.",
             url: "#/info/6",
             palestra: 1,
             id: 6
+        }, {
+            title: "Mulheres na Computação",
+            nome_palestrante: "Camila Achutti",
+            start: new Date(2015, 8, 8, 11),
+            end: new Date(2015, 8, 8, 11, 50),
+            image: "",
+            text_pessoal: "",
+            text_palesta: "",
+            url: "#/info/7",
+            palestra: 1,
+            id: 7
+        }, {
+            title: "Neurociência Computacional",
+            nome_palestrante: "Antônio C. Roque",
+            start: new Date(2015, 8, 8, 14),
+            end: new Date(2015, 8, 8, 14, 50),
+            image: "",
+            text_pessoal: "Natural de São Paulo (1963), Antônio Carlos Roque da Silva Filho, ou simplesmente Antônio Roque como é mais conhecido nos meios acadêmicos, formou-se em física pela Unicamp em 1985. Concluiu mestrado em física na mesma universidade (1987) e fez doutorado em ciência da computação e inteligência artificial na Universidade de Sussex, Inglaterra (1992). Em 1993, ingressou no Departamento de Física da Faculdade de Filosofia, Ciências e Letras de Ribeirão Preto (FFCLRP) da USP onde atualmente é professor associado. Em 1996, fundou e coordena desde então o Laboratório de Sistemas Neurais (SisNe), que é um dos laboratórios de pesquisa pioneiros da América Latina em neurociência computacional. Suas atividades de pesquisa cobrem desde a modelagem biofisicamente detalhada de células nervosas até a modelagem de redes de neurônios compostas por dezenas de milhares de células. Outra ação importante e pioneira do Prof. Roque foi a criação em 2006 da escola bienal “Latin American School on Computational Neuroscience” (LASCON), que tem contribuído significativamente para a formação de pesquisadores em neurociência computacional no Brasil e na América Latina.",
+            text_palesta: "Esta palestra fornecerá uma breve apresentação sobre o que é a neurociência computacional. Serão comentados os principais objetivos da área, desde a modelagem computacional de neurônios individuais até a modelagem de redes de neurônios compostas por centenas de milhares de células. Também serão comentadas as principais ferramentas computacionais para a construção de modelos e as principais linhas de pesquisa no tema desenvolvidas pelo palestrante e seus colaboradores.",
+            url: "#/info/8",
+            palestra: 1,
+            id: 8
+        }, {
+            title: "HackathonIME",
+            backgroundColor: '#09508a',
+            start: new Date(2015, 8, 12, 15),
+            end: new Date(2015, 8, 13, 15),
+            image: "",
+            text_pessoal: "Natural de São Paulo (1963), Antônio Carlos Roque da Silva Filho, ou simplesmente Antônio Roque como é mais conhecido nos meios acadêmicos, formou-se em física pela Unicamp em 1985. Concluiu mestrado em física na mesma universidade (1987) e fez doutorado em ciência da computação e inteligência artificial na Universidade de Sussex, Inglaterra (1992). Em 1993, ingressou no Departamento de Física da Faculdade de Filosofia, Ciências e Letras de Ribeirão Preto (FFCLRP) da USP onde atualmente é professor associado. Em 1996, fundou e coordena desde então o Laboratório de Sistemas Neurais (SisNe), que é um dos laboratórios de pesquisa pioneiros da América Latina em neurociência computacional. Suas atividades de pesquisa cobrem desde a modelagem biofisicamente detalhada de células nervosas até a modelagem de redes de neurônios compostas por dezenas de milhares de células. Outra ação importante e pioneira do Prof. Roque foi a criação em 2006 da escola bienal “Latin American School on Computational Neuroscience” (LASCON), que tem contribuído significativamente para a formação de pesquisadores em neurociência computacional no Brasil e na América Latina.",
+            text_palesta: "Esta palestra fornecerá uma breve apresentação sobre o que é a neurociência computacional. Serão comentados os principais objetivos da área, desde a modelagem computacional de neurônios individuais até a modelagem de redes de neurônios compostas por centenas de milhares de células. Também serão comentadas as principais ferramentas computacionais para a construção de modelos e as principais linhas de pesquisa no tema desenvolvidas pelo palestrante e seus colaboradores.",
+            palestra: 0,
         }];
 
         return {

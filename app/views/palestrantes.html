@@ -1,4 +1,4 @@
-<div class="panel panel-default" ng-repeat="pale in palestrantes" ng-show="pale.palestra==1">
+<div class="panel panel-default" ng-repeat="pale in palestrantes | orderBy:'nome_palestrante'" ng-if="pale.palestra=='1'">
     <div class="panel-heading">
         <h4><i class="fa fa-fw fa-gift"></i><b>{{pale.nome_palestrante}}</b> <small>{{pale.title}} </small></h4> </div>
     <div class="panel-body">
