@@ -23,8 +23,9 @@
         <!-- Add your site or application content here -->
         <div class="header" ng-include src="'views/menu.html'">
         </div>
+        <div ui-view="top" class="top"></div>
         <div class="container container2">
-            <div ng-view=""></div>
+            <div ui-view="container"></div>
         </div>
         <!-- build:js(.) scripts/vendor.js -->
         <!-- bower:js -->
@@ -66,6 +67,7 @@
         <script src="scripts/controllers/hack.js"></script>
         <script src="scripts/controllers/info.js"></script>
         <script src="scripts/terminal.js"></script>
+        <script src="scripts/controllers/terminal.js"></script>
         <!-- endbuild -->
     </body>
 </html>

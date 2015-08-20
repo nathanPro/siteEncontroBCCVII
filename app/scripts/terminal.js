@@ -34,14 +34,20 @@ var typed_message = typed(function(term, message, prompt) {
     term.set_prompt(prompt);
 });
 
-function terminal() {
+function terminal(programacao) {
     // global to access from js terminal
     term = $('#term_demo').terminal(function(command, term) {
         if (command !== '') {
 
             if (command == "BCC") {
                 typed_message(term, "Olá BCC", 100);
+            } if (command == "programacao") {
+                programacao.forEach(function(data){
+                    term.echo(data.start+" - "+data.title);
+                });
+                term.echo("");
             } else if (command == "-help") {
+                term.echo("programacao\tLista dos eventos\n");
                 term.echo("alert(strinf)\tMath.abs()\tMath.acos()\tMath.acosh()\nMath.asin()\tMath.asinh()\tMath.atan()\tMath.atan2()\nMath.atanh()\tMath.cbrt()\tMath.ceil()\tMath.clz32()\nMath.cos()\tMath.cosh()\tMath.exp()\tMath.expm1()\nMath.floor()\tMath.fround()\tMath.hypot()\tMath.imul()\nMath.log()\tMath.log10()\tMath.log1p()\tMath.log2()\nMath.max()\tMath.min()\tMath.pow()\tMath.random()\nMath.round()\tMath.sign()\tMath.sin()\tMath.sinh()\nMath.sqrt()\tMath.tan()\tMath.tanh()\n");
             } else {
                 try {
@@ -59,12 +65,12 @@ function terminal() {
     }, {
         greetings: '',
         name: 'js_demo',
-        height: 450,
+        height: 550,
         prompt: 'user$ ',
         onInit: function(term) {
             // first question
             var msg = "Seja bem vindo!\nVocê está oficialmente convidado para o encontro do BCC 2015.\nPara ajuda -help\n";
-            typed_message(term, msg, 100, function() {
+            typed_message(term, msg, 50, function() {
 
             });
         }

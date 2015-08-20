@@ -16,73 +16,125 @@ angular
         'ngSanitize',
         'ngAnimate',
         'ui.calendar',
-        'ngMap'
+        'ngMap',
+        'ui.router'
     ])
-    .config(function($routeProvider) {
-        $routeProvider
-            .when('/', {
+    .config(function($stateProvider, $urlRouterProvider) {
+        $stateProvider
+            .state('main', {
+                url: '/',
                 templateUrl: 'views/main.html',
-                controller: 'MainCtrl',
-                controllerAs: 'main'
+                views: {
+                    'container': {
+                        templateUrl: 'views/main.html',
+                        controller: 'MainCtrl'
+                    },
+                    'top': {
+                        templateUrl: 'views/terminal.html',
+                        controller: 'TerminalCtrl'
+                    }
+                }
             })
-            .when('/about', {
-                templateUrl: 'views/about.html',
-                controller: 'AboutCtrl',
-                controllerAs: 'about'
+            .state('about', {
+                url: '/About',
+                views: {
+                    'container': {
+                        templateUrl: 'views/about.html',
+                        controller: 'AboutCtrl'
+                    }
+                }
             })
-            .when('/Acontece', {
-                templateUrl: 'views/acontece.html',
-                controller: 'AconteceCtrl',
-                controllerAs: 'Acontece'
+            .state('Acontece', {
+                url: '/Acontece',
+                views: {
+                    'container': {
+                        templateUrl: 'views/acontece.html',
+                        controller: 'AconteceCtrl'
+                    }
+                }
             })
-            .when('/Programacao', {
-                templateUrl: 'views/programacao.html',
-                controller: 'ProgramacaoCtrl',
-                controllerAs: 'Programacao'
+            .state('Programacao', {
+                url: '/Programacao',
+                views: {
+                    'container': {
+                        templateUrl: 'views/programacao.html',
+                        controller: 'ProgramacaoCtrl'
+                    }
+                }
             })
-            .when('/Palestrantes', {
-                templateUrl: 'views/palestrantes.html',
-                controller: 'PalestrantesCtrl',
-                controllerAs: 'Palestrantes'
+            .state('Palestrantes', {
+                url: '/Palestrantes',
+                views: {
+                    'container': {
+                        templateUrl: 'views/palestrantes.html',
+                        controller: 'PalestrantesCtrl'
+                    }
+                }
             })
-            .when('/Patrocinadores', {
-                templateUrl: 'views/patrocinadores.html',
-                controller: 'PatrocinadoresCtrl',
-                controllerAs: 'Patrocinadores'
+            .state('Patrocinadores', {
+                url: '/Patrocinadores',
+                views: {
+                    'container': {
+                        templateUrl: 'views/patrocinadores.html',
+                        controller: 'PatrocinadoresCtrl'
+                    }
+                }
             })
-            .when('/Historia', {
-                templateUrl: 'views/historia.html',
-                controller: 'HistoriaCtrl',
-                controllerAs: 'Historia'
+            .state('Historia', {
+                url: '/Historia',
+                views: {
+                    'container': {
+                        templateUrl: 'views/historia.html',
+                        controller: 'HistoriaCtrl'
+                    }
+                }
             })
-            .when('/Colabore', {
-                templateUrl: 'views/colabore.html',
-                controller: 'ColaboreCtrl',
-                controllerAs: 'Colabore'
+            .state('Colabore', {
+                url: '/Colabore',
+                views: {
+                    'container': {
+                        templateUrl: 'views/colabore.html',
+                        controller: 'ColaboreCtrl'
+                    }
+                }
             })
-            .when('/Local', {
-                templateUrl: 'views/local.html',
-                controller: 'LocalCtrl',
-                controllerAs: 'Local'
+            .state('Local', {
+                url: '/Local',
+                views: {
+                    'top': {
+                        templateUrl: 'views/local.html',
+                        controller: 'LocalCtrl'
+                    }
+                }
             })
-            .when('/Chegando', {
-                templateUrl: 'views/chegando.html',
-                controller: 'ChegandoCtrl',
-                controllerAs: 'Chegando'
+            .state('Chegando', {
+                url: '/Chegando',
+                views: {
+                    'container': {
+                        templateUrl: 'views/chegando.html',
+                        controller: 'ChegandoCtrl'
+                    }
+                }
             })
-            .when('/Hack', {
-                templateUrl: 'views/hack.html',
-                controller: 'HackCtrl',
-                controllerAs: 'Hack'
+            .state('Hack', {
+                url: '/Hack',
+                views: {
+                    'container': {
+                        templateUrl: 'views/hack.html',
+                        controller: 'HackCtrl'
+                    }
+                }
             })
-            .when('/info/:id', {
-                templateUrl: 'views/info.html',
-                controller: 'InfoCtrl',
-                controllerAs: 'info'
-            })
-            .otherwise({
-                redirectTo: '/'
-            });
+            .state('info', {
+                url: '/info/:id',
+                views: {
+                    'container': {
+                        templateUrl: 'views/info.html',
+                        controller: 'InfoCtrl'
+                    }
+                }}
+            );
+            $urlRouterProvider.otherwise("/main");
     })
 
 .directive('disableNgAnimate', ['$animate', function($animate) {

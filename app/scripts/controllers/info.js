@@ -8,7 +8,7 @@
  * Controller of the encontroApp
  */
 angular.module('encontroApp')
-    .controller('InfoCtrl', function($routeParams, $scope, Palestrantes) {
-        $scope.pale = Palestrantes.id($routeParams.id);
+    .controller('InfoCtrl', function($stateParams, $scope, Palestrantes) {
+        $scope.pale = Palestrantes.id($stateParams.id);
         console.log($scope.pale);
     });
