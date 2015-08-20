@@ -47,7 +47,7 @@ angular.module('encontroApp')
             nome_palestrante: "Antônio C. Roque",
             start: new Date(0, 0, 0, 0),
             end: new Date(0, 0, 0, 0),
-            image: "http://placehold.it/150x150?text=Antônio C. Roque",
+            image: "",
             text_pessoal: "Natural de São Paulo (1963), Antônio Carlos Roque da Silva Filho, ou simplesmente Antônio Roque como é mais conhecido nos meios acadêmicos, formou-se em física pela Unicamp em 1985. Concluiu mestrado em física na mesma universidade (1987) e fez doutorado em ciência da computação e inteligência artificial na Universidade de Sussex, Inglaterra (1992). Em 1993, ingressou no Departamento de Física da Faculdade de Filosofia, Ciências e Letras de Ribeirão Preto (FFCLRP) da USP onde atualmente é professor associado. Em 1996, fundou e coordena desde então o Laboratório de Sistemas Neurais (SisNe), que é um dos laboratórios de pesquisa pioneiros da América Latina em neurociência computacional. Suas atividades de pesquisa cobrem desde a modelagem biofisicamente detalhada de células nervosas até a modelagem de redes de neurônios compostas por dezenas de milhares de células. Outra ação importante e pioneira do Prof. Roque foi a criação em 2006 da escola bienal “Latin American School on Computational Neuroscience” (LASCON), que tem contribuído significativamente para a formação de pesquisadores em neurociência computacional no Brasil e na América Latina.",
             text_palesta: "Esta palestra fornecerá uma breve apresentação sobre o que é a neurociência computacional. Serão comentados os principais objetivos da área, desde a modelagem computacional de neurônios individuais até a modelagem de redes de neurônios compostas por centenas de milhares de células. Também serão comentadas as principais ferramentas computacionais para a construção de modelos e as principais linhas de pesquisa no tema desenvolvidas pelo palestrante e seus colaboradores.",
             url: "#/info/5",
@@ -70,8 +70,8 @@ angular.module('encontroApp')
             start: new Date(2015, 8, 8, 11),
             end: new Date(2015, 8, 8, 11, 50),
             image: "",
-            text_pessoal: "",
-            text_palesta: "",
+            text_pessoal: "Em breve.",
+            text_palesta: "Em breve.",
             url: "#/info/7",
             palestra: 1,
             id: 7
@@ -95,6 +95,39 @@ angular.module('encontroApp')
             text_pessoal: "Natural de São Paulo (1963), Antônio Carlos Roque da Silva Filho, ou simplesmente Antônio Roque como é mais conhecido nos meios acadêmicos, formou-se em física pela Unicamp em 1985. Concluiu mestrado em física na mesma universidade (1987) e fez doutorado em ciência da computação e inteligência artificial na Universidade de Sussex, Inglaterra (1992). Em 1993, ingressou no Departamento de Física da Faculdade de Filosofia, Ciências e Letras de Ribeirão Preto (FFCLRP) da USP onde atualmente é professor associado. Em 1996, fundou e coordena desde então o Laboratório de Sistemas Neurais (SisNe), que é um dos laboratórios de pesquisa pioneiros da América Latina em neurociência computacional. Suas atividades de pesquisa cobrem desde a modelagem biofisicamente detalhada de células nervosas até a modelagem de redes de neurônios compostas por dezenas de milhares de células. Outra ação importante e pioneira do Prof. Roque foi a criação em 2006 da escola bienal “Latin American School on Computational Neuroscience” (LASCON), que tem contribuído significativamente para a formação de pesquisadores em neurociência computacional no Brasil e na América Latina.",
             text_palesta: "Esta palestra fornecerá uma breve apresentação sobre o que é a neurociência computacional. Serão comentados os principais objetivos da área, desde a modelagem computacional de neurônios individuais até a modelagem de redes de neurônios compostas por centenas de milhares de células. Também serão comentadas as principais ferramentas computacionais para a construção de modelos e as principais linhas de pesquisa no tema desenvolvidas pelo palestrante e seus colaboradores.",
             palestra: 0,
+        }, {
+            title: "Tapps",
+            nome_palestrante: "Alessandro (ex-aluno)",
+            start: new Date(2015, 8, 8, 15),
+            end: new Date(2015, 8, 8, 15, 50),
+            image: "",
+            text_pessoal: "Em breve.",
+            text_palesta: "Em breve.",
+            url: "#/info/9",
+            palestra: 1,
+            id: 9
+        }, {
+            title: "A nova grade curricular do BCC",
+            nome_palestrante: "Professores Carlinhos, Coelho e Daniel",
+            start: new Date(2015, 8, 9, 11),
+            end: new Date(2015, 8, 9, 11, 50),
+            image: "",
+            text_pessoal: "Em breve.",
+            text_palesta: "Em breve.",
+            url: "#/info/10",
+            palestra: 1,
+            id: 10
+        }, {
+            title: "Análise de Segurança de aplicativos bancários na plataforma Android",
+            nome_palestrante: "Diego Aranha",
+            start: new Date(2015, 8, 9, 14),
+            end: new Date(2015, 8, 9, 14, 50),
+            image: "",
+            text_pessoal: "Em breve.",
+            text_palesta: "Em breve.",
+            url: "#/info/11",
+            palestra: 1,
+            id: 11
         }];
 
         return {
