@@ -167,3 +167,18 @@ hr {
 .img-thumbnail {
   margin-bottom: 10px;
 }
+
+.panel-default > .panel-heading {
+  color: #FFF;
+  background-color: #0D73C6;
+  border-color: #ddd;
+}
+
+.panel-default > .panel-heading > h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h4 small {
+  color: #EEE;
+}

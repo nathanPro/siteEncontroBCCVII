@@ -40,8 +40,8 @@ function terminal(programacao) {
         if (command !== '') {
 
             if (command == "BCC") {
-                typed_message(term, "Olá BCC", 100);
-            } if (command == "programacao") {
+                typed_message(term, "BCC! BCC! BCC!", 10);
+            } else if (command == "programacao" || command == "ls") {
                 programacao.forEach(function(data){
                     term.echo(data.start+" - "+data.title);
                 });
@@ -65,7 +65,7 @@ function terminal(programacao) {
     }, {
         greetings: '',
         name: 'js_demo',
-        height: 550,
+        height: $( window ).height()/2,
         prompt: 'user$ ',
         onInit: function(term) {
             // first question

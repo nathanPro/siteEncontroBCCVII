@@ -99,8 +99,8 @@ angular.module('encontroApp')
         }, {
             title: "A nova grade curricular do BCC",
             nome_palestrante: "Professores Carlinhos, Coelho e Daniel",
-            start: new Date(2015, 8, 9, 11),
-            end: new Date(2015, 8, 9, 11, 50),
+            start: new Date(2015, 8, 10, 11),
+            end: new Date(2015, 8, 10, 11, 50),
             image: "",
             text_pessoal: "Em breve.",
             text_palesta: "Em breve.",
@@ -133,7 +133,7 @@ angular.module('encontroApp')
         {
             title: "USP GameDev",
             nome_palestrante: "Wilson Kazuo Mizutani",
-            start: new Date(2015, 8, 10),
+            start: new Date(2015, 8, 10, 10),
             end: new Date(2015, 8, 10, 10, 50),
             image: "",
             text_pessoal: "Wilson Kazuo Mizutani é formado no BCC, atualmente cursando Mestrado em computação no IME. Foi um dos fundadores do USPGameDev, e trabalhou no desenvolvimento do jogo Horus Eye e da engine UGDK. Também é embaixador do CCSL, e organizou a II Semana de Software Livre da USP. Participou de um projeto conjunto com a ECA no programa Ensinar com Pesquisa da USP, no qual foram ministrados cursos de software livre para alunos de Jornalismo. Além disso, é membro ativo da Comissão de Recepção do IME, que nesses dois últimos anos ganhou o prêmio de melhor Semana de Recepção aos Calouros pela pró-Reitoria de Graduação da USP.",
@@ -164,6 +164,20 @@ angular.module('encontroApp')
             url: "#/info/15",
             palestra: 1,
             id: 15
+        },
+        {
+            title: "Palestra pré-Hackathon",
+            nome_palestrante: "Roberto Spacey",
+            start: new Date(2015, 8, 12, 14),
+            end: new Date(2015, 8, 12, 15),
+            backgroundColor: '#09508a',
+        },
+        {
+            title: "Apresentações, encerramento e premiações",
+            nome_palestrante: "Roberto Spacey",
+            start: new Date(2015, 8, 13, 15),
+            end: new Date(2015, 8, 13, 16),
+            backgroundColor: '#09508a',
         }];
 
         return {
