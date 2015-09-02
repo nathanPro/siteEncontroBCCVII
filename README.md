@@ -12,3 +12,5 @@ version 0.12.1.
 
 * Para adicionar informações sobre palestras, editar a pasta app/scripts/services/palestrantes.js - Note que o mes deve se o atual -1 (padrão do javascript).
 
+##### Por que ninguém lé esse arquivo?
+
