@@ -132,9 +132,9 @@ angular
                         templateUrl: 'views/info.html',
                         controller: 'InfoCtrl'
                     }
-                }}
-            );
-            $urlRouterProvider.otherwise("/");
+                }
+            });
+        $urlRouterProvider.otherwise("/");
     })
 
 .directive('disableNgAnimate', ['$animate', function($animate) {

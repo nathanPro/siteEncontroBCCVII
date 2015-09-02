@@ -474,6 +474,11 @@ module.exports = function (grunt) {
     'karma'
   ]);
 
+  grunt.registerTask('limpa', [
+      'prettify',
+      'jsbeautifier'
+  ]);
+
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',

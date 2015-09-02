@@ -42,8 +42,8 @@ function terminal(programacao) {
             if (command == "BCC") {
                 typed_message(term, "BCC! BCC! BCC!", 10);
             } else if (command == "programacao" || command == "ls") {
-                programacao.forEach(function(data){
-                    term.echo(data.start+" - "+data.title);
+                programacao.forEach(function(data) {
+                    term.echo(data.start + " - " + data.title);
                 });
                 term.echo("");
             } else if (command == "-help") {
@@ -65,7 +65,7 @@ function terminal(programacao) {
     }, {
         greetings: '',
         name: 'js_demo',
-        height: $( window ).height()/2,
+        height: $(window).height() / 2,
         prompt: 'user$ ',
         onInit: function(term) {
             // first question

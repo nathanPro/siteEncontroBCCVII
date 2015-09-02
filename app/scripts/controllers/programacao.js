@@ -12,7 +12,7 @@ angular.module('encontroApp')
         $scope.eventSources = [Palestrantes.all()];
         $scope.uiConfig = {
             calendar: {
-                hiddenDays: [ 1 ],
+                hiddenDays: [1],
                 height: 550,
                 editable: false,
                 defaultView: 'agendaWeek',
