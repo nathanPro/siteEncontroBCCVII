@@ -155,8 +155,8 @@ angular.module('encontroApp')
         }, {
             title: "Computação Quântica",
             nome_palestrante: "Professores Cris e Gubi",
-            start: new Date(2015, 8, 11),
-            end: new Date(2015, 8, 10, 11, 50),
+            start: new Date(2015, 8, 8, 16, 30),
+            end: new Date(2015, 8, 8, 17, 20),
             image: "",
             local: "Auditório Jacy Monteiro",
             text_pessoal: "Em breve.",
@@ -206,6 +206,18 @@ angular.module('encontroApp')
             url: "#/info/17",
             palestra: 1,
             id: 17
+        }, {
+            title: "Contratado.me",
+            nome_palestrante: "Lucas",
+            start: new Date(2015, 8, 9, 11),
+            end: new Date(2015, 8, 9, 11, 50),
+            image: "",
+            local: "Auditório Jacy Monteiro",
+            text_pessoal: "Em breve.",
+            text_palesta: "Em breve.",
+            url: "#/info/20",
+            palestra: 1,
+            id: 20
         }];
 
         return {

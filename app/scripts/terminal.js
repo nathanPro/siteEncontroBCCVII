@@ -39,12 +39,22 @@ function terminal(programacao) {
     term = $('#term_demo').terminal(function(command, term) {
         if (command !== '') {
 
-            if (command == "BCC") {
+            if (command == "BCC" || command == "bcc") {
                 typed_message(term, "BCC! BCC! BCC!", 10);
             } else if (command == "programacao" || command == "ls") {
+                programacao.sort(function(a, b) {
+                    if (a.start.getTime() > b.start.getTime()) {
+                        return 1;
+                    }
+                    if (a.start.getTime() < b.start.getTime()) {
+                        return -1;
+                    }
+                    return 0;
+                });
                 programacao.forEach(function(data) {
                     term.echo(data.start + " - " + data.title);
                 });
+
                 term.echo("");
             } else if (command == "-help") {
                 term.echo("programacao\tLista dos eventos\n");
@@ -56,7 +66,7 @@ function terminal(programacao) {
                         term.echo(new String(result));
                     }
                 } catch (e) {
-                    term.error("Comando não encontrado....");
+                    term.error("Comando não encontrado...");
                 }
             }
         } else {
