@@ -189,7 +189,7 @@ angular.module('encontroApp')
             backgroundColor: '#09508a',
             local: "Auditório do CCSL",
         }, {
-            title: "Conversa com os porfessores do departamento de ciências da computação.",
+            title: "Conversa com os professores do departamento de ciências da computação.",
             start: new Date(2015, 8, 11, 14),
             end: new Date(2015, 8, 11, 17, 20),
             backgroundColor: '#09508a',
