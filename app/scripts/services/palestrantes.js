@@ -70,14 +70,14 @@ angular.module('encontroApp')
             palestra: 1,
             id: 6
         }, {
-            title: "Mulheres na Computação",
+            title: "Vamos mudar o mundo com mulheres, empreendedorismo e tecnologia?",
             nome_palestrante: "Camila Achutti",
             start: new Date(2015, 8, 8, 11),
             end: new Date(2015, 8, 8, 11, 50),
             image: "",
             local: "Auditório Jacy Monteiro",
             text_pessoal: "Engenheira de Software da Iridescent, ONG americana de ensino e formação científica e tecnológica e Influenciadora Digital na FIAP. Fundadora do blog Mulheres na Computação, Embaixadora do Technovation Challenge Brasil. Formada em Ciência da Computação pelo IME-USP e mestranda pelo mesmo instituto. Estagiou no Google em Mountain View. Seu maior objetivo é revolucionar a indústia de tecnologia com mais diversidade, construindo uma comunidade de meninas capaz de fazer isso através de inovação.",
-            text_palesta: "Em breve.",
+            text_palesta: "Conversar sobre a realidade das mulheres no TI e como nós, homens e mulheres, da área ou não, podemos ajudar nessa questão. Vamos discutir um pouco sobre o que aconteceu para a diminuição da representação feminina na área e o que já vem sendo feito para reverter essa situação.",
             url: "#/info/7",
             palestra: 1,
             id: 7
@@ -93,14 +93,14 @@ angular.module('encontroApp')
             palestra: 0,
             url: "#/Hack"
         }, {
-            title: "Tapps",
+            title: "O mercado de jogos mobile",
             nome_palestrante: "Alessandro (ex-aluno)",
             start: new Date(2015, 8, 8, 15),
             end: new Date(2015, 8, 8, 15, 50),
             image: "",
             local: "Auditório Jacy Monteiro",
-            text_pessoal: "Em breve.",
-            text_palesta: "Em breve.",
+            text_pessoal: "Alessandro Calò é bacharel em Ciência da Computação pelo IME-USP. Obteve o diploma em 2014 e desde então é desenvolvedor de jogos na Tapps Games, em São Paulo. As suas principais áreas de interesse são relacionadas à Inteligência Artificial, como Machine Learning e Linguagem Natural. A sua experiência profissional é de desenvolvimento de aplicativos para as plataformas móveis.",
+            text_palesta: "Essa palestra fornecerá uma visão geral sobre o mercado de jogos mobile, detalhando o seu status atual, as ferramentas que são utilizadas para o desenvolvimento, e o todo o processo pelo qual um jogo mobile passa antes – e depois – do lançamento. Vamos analisar as entidades que constituem o mercado, e apresentar a Tapps Games: quem são os profissionais da área de jogos, o que fazem no dia-a-dia, e quais são os objetivos de uma startup nesse ramo. Também apresentaremos algumas oportunidades de trabalho aos alunos.",
             url: "#/info/9",
             palestra: 1,
             id: 9
@@ -123,8 +123,8 @@ angular.module('encontroApp')
             end: new Date(2015, 8, 9, 14, 50),
             image: "",
             local: "Auditório Jacy Monteiro",
-            text_pessoal: "Em breve.",
-            text_palesta: "Em breve.",
+            text_pessoal: "É Professor Doutor na Universidade Estadual de Campinas (Unicamp) desde 2014. Tem experiência na área de Criptografia e Segurança Computacional, com ênfase em implementação eficiente de algoritmos criptográficos e projeto de primitivas criptográficas para fornecimento de anonimato computacional. Coordenou a primeira equipe de investigadores independentes capaz de detectar e explorar vulnerabilidades no software da urna eletrônica em testes controlados organizados pelo Tribunal Superior Eleitoral. É Bacharel em Ciência da Computação pela Universidade de Brasília (2005), Mestre (2007) e Doutor (2011) em Ciência da Computação pela Universidade Estadual de Campinas. Foi doutorando visitante por 1 ano na Universidade de Waterloo, Canadá, e Professor Adjunto por pouco mais de 2 anos no Departamento de Ciência da Computação da Universidade de Brasília.",
+            text_palesta: "O volume de transações bancárias realizadas por dispositivos móveis cresce a cada ano. Nessa palestra, reportamos resultados de uma análise de segurança em aplicativos bancários, sob dois aspectos principais: segurança da conexão SSL/TLS estabelecida e configuração do servidor propriamente dito, com ênfase em ataques clássicos e recentes ao protocolo SSL/TLS. Os bancos analisados foram Banco do Brasil, Bradesco, Caixa Econômica Federal, Citibank, HSBC, Itaú e Santander. Foi possível montar um ataque de personificação do servidor com sucesso na maioria dos aplicativos e obter informações sigilosas, credenciais de autenticação e dados financeiros. As observações coletadas não se resumiram apenas aos ataques de personificação, mas também a falhas na configuração dos servidores e decisões de projeto questionáveis, como integração com redes sociais externas. Apesar da ênfase no setor financeiro, as recomendações são aplicáveis a outros tipos de serviço. Demonstração prática incluída!",
             url: "#/info/11",
             palestra: 1,
             id: 11
@@ -159,20 +159,20 @@ angular.module('encontroApp')
             end: new Date(2015, 8, 8, 17, 20),
             image: "",
             local: "Auditório Jacy Monteiro",
-            text_pessoal: "Em breve.",
-            text_palesta: "Em breve.",
+            text_pessoal: "<b>Cris</b><br>Formada pelo BCC em 1987, Cristina é docente do Departamento de Ciência da Computação desde 1988. Fez mestrado no IME, orientada pelo Professor Paulo Feofiloff, e depois fez seu doutorado no College of Computing do Georgia Institute of Technology (EUA), no programa Algorithms, Combinatorics, and Optimization. Sua área de pesquisa se enquadra em teoria da computação, mais especificamente projeto de algoritmos, teoria dos grafos, e otimização combinatória. Cristina ministra, tanto no BCC quanto na pós-graduação em Ciência da Computação, disciplinas ligadas a algoritmos, tais como estruturas de dados, análise de algoritmos, algoritmos de aproximação, geometria computacional, desafios de programação, entre outras mais básicas.<br><b>Gubi</b><br>Formado em Física pela USP em 1980, obteve o grau de mestre pela mesma instituição em 1987, em Teoria de Campos e Partículas Elementares. Em 1987 foi contratado pelo IME como professor assistente e em 1989 desenvolveu o primeiro anti-vírus de computador no Brasil. Entre 1989 e 1991 esteve como professor visitante na Carnegie Mellon University, iniciando seu doutorado logo após seu retorno, na área de modelagem de desempenho de sistemas paralelos. Fez diversas visitas científicas à Universidade de Vienna, ao GMD-first em Berlin e a Texas A&M University. Atualmente trabalha em Bioinformática, Etimologia da Língua Portuguesa e Simulação de Imagens Estelares para Astrobiologia.",
+            text_palesta: "Primeiramente falaremos da história e princípios da mecânica quântica de uma forma intuitiva (tanto quanto possível) e lúdica, com destaque para os resultados que permitem a realização da computação quântica. Em seguida apresentaremos os ingredientes de um computador quântico, comparando-os com os correspondentes de um computador clássico. Faremos um resumo dos principais resultados teóricos conhecidos, suas implicações, e as dificuldades para se construir um computador quântico de interesse prático.",
             url: "#/info/16",
             palestra: 1,
             id: 16
         }, {
-            title: "Cidades Inteligentes",
+            title: "Colaboração e Cidades Inteligentes",
             nome_palestrante: "Roberto Speicys",
             start: new Date(2015, 8, 10, 16, 30),
             end: new Date(2015, 8, 10, 17, 20),
             image: "",
             local: "Auditório Jacy Monteiro",
-            text_pessoal: "Em breve.",
-            text_palesta: "Em breve.",
+            text_pessoal: "Roberto Speicys Cardoso é doutor em Ciência da Computação pela Universidade Pierre et Marie Curie - Paris VI - Sorbonne Universités na área de privacidade em sistemas pervasivos. Participou de diversos projetos europeus de pesquisa nas áreas de serviços pervasivos, adaptação de sistemas e smart cities. Fundou na França a empresa Ambientic que desenvolve middleware para aplicações móveis multi-plataformas e no Brasil é sócio-fundador da Scipopulis, empresa que cria plataformas para a construção de conhecimento a partir da sabedoria coletiva.",
+            text_palesta: "Nessa palestra, falaremos de como iniciativas colaborativas podem deixar as cidades mais inteligentes, as dificuldades em criar plataformas colaborativas e o que a Scipopulis está fazendo para deixar as cidades mais inteligentes a partir da colaboração dos cidadãos.",
             url: "#/info/15",
             palestra: 1,
             id: 15
